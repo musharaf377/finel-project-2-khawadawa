@@ -1,0 +1,80 @@
+/* contact area style */
+
+.contact-area {
+    .single-contact-form {
+        .contact-form {
+
+            input,
+            textarea {
+                width: 100%;
+                padding: 8px;
+                margin: 5px 0px;
+                border: 1px solid $gray;
+            }
+
+            input[type="submit"] {
+                background: $primary;
+                color: $white;
+                font-size: 20px;
+                text-transform: capitalize;
+                font-weight: 600;
+                transition: .3s;
+
+                &:hover {
+                    background: $black;
+                }
+
+            }
+        }
+    }
+
+    .single-contact-address {
+        @include max-xs{
+            margin-top:30px;
+        }
+        @include min-sm{
+            margin-top:30px;
+        }
+        @include min-md{
+            margin-top:30px;
+        }
+        .contact-address {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            margin-bottom: 30px;
+
+            i {
+                font-size: 20px;
+                border: 1px solid $primary;
+                width: 45px;
+                height: 45px;
+                line-height: 45px;
+                text-align: center;
+                margin-right: 20px;
+                color: $primary;
+            }
+
+            h4 {
+                font-size: 20px;
+                text-transform: capitalize;
+                font-weight: 700;
+
+                span {
+                    display: block;
+                    font-size: 17px;
+                    text-transform: lowercase;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+    iframe {
+        width: 100%;
+        border: 0;
+        vertical-align: middle;
+        height: 300px;
+        margin-top: 40px;
+        border-top: 1px solid #ddd;
+      }
+}

@@ -1,0 +1,73 @@
+/* Header Area style */
+.header-area {
+    padding: 15px 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+
+    .logo {
+        @include max-xs {
+            position: inherit;
+            top: 10px;
+            left: 15px;
+            width: 90%;
+        }
+    }
+
+
+    @include min-sm {
+        text-align: center;
+    }
+
+    ul {
+        @include max-xs {
+            display: none;
+        }
+
+        @include min-sm {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        li {
+            a {
+                display: block;
+                margin-left: 20PX;
+                font-size: 18px;
+                text-transform: capitalize;
+                font-weight: 500;
+                transition: .3s;
+                color: $white;
+
+
+                @include min-md {
+                    font-size: 15px;
+                    margin-left: 15px;
+                }
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+    }
+}
+
+.slicknav_menu {
+    display: none;
+
+    @include max-xs {
+        display: block;
+        z-index: 999;
+        padding-top: 10px;
+
+        a {
+            background: transparent;
+            z-index: 999;
+
+        }
+    }
+
+}

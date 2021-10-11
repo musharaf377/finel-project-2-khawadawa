@@ -1,0 +1,41 @@
+/* Gallery area style */
+
+.gallery-area{
+    .single-gallery {
+        margin-bottom: 30px;
+        position: relative;
+        overflow: hidden;
+        &:hover::before{
+            width:50%;
+        }
+        &:hover::after{
+            width:50%;
+        }
+        img{
+            width: 100%;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            width: 0%;
+            height: 100%;
+            top: 0;
+            left: 0%;
+            background: $black;
+            z-index: 2;
+            transition: .5s;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 0%;
+            height: 100%;
+            top: 0;
+            right: 0;
+            background: $black;
+            z-index: 2;
+            transition: .5s;
+        }
+    }
+}
+

@@ -1,0 +1,30 @@
+/* Breadcumb area style */
+
+.breadcumb-area {
+    padding-top: 150px;
+    @include max-xs{
+        padding:60px 0px;
+    }
+    h2 {
+        color: #fff;
+        text-transform: capitalize;
+    }
+    ul {
+        display: flex;
+        li {
+            color: #fff;
+            margin-right: 10px;
+            font-size: 17px;
+            text-transform: capitalize;
+            font-weight: 600;
+            margin-top: 10px;
+            a {
+                color: #fff;
+                transition: .3s;
+                &:hover {
+                    color: tomato;
+                }
+            }
+        }
+    }
+}

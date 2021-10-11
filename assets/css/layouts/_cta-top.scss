@@ -1,0 +1,38 @@
+/* CTA top area style */
+.cta-top-area{
+    color:#fff;
+    .section-title {
+        margin: 0;
+        color: #fff;
+        h3{
+            padding: 20px 0px;
+            font-size: 55px;
+            @include max-xs{
+                font-size: 27px;
+            }
+            @include min-sm{
+                line-height: 55px;
+                font-size: 45px;
+            }
+            @include min-md{
+                font-size: 30px;
+            }
+            @include min-lg{
+                font-size: 35px;
+            }
+            span{
+                color: tomato;
+                font-size: 40px;
+                @include max-xs{
+                    font-size: 27px;
+                }
+                @include min-md{
+                    font-size: 30px;
+                }
+                @include min-lg{
+                    font-size: 35px;
+                }
+            }
+        }
+    }
+}

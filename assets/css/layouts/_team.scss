@@ -1,0 +1,47 @@
+/* Team area style */
+.team-area{
+    background-color: $bg_gray;
+    .single-team {
+        position: relative;
+        overflow: hidden;
+        border: 1px solid #ddd;
+        padding:3px;
+        @include max-xs{
+            margin-bottom: 30px;
+        }
+        @include min-sm{
+            margin-bottom: 30px;
+        }
+
+        img{
+            width: 100%;
+        }
+        &:hover{
+            .team-content{
+                bottom: 0;
+                
+            }
+        }
+        .team-content{
+            position: absolute;
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0px;
+            width: 100%;
+            bottom:-94px;
+            transition: .4s;
+            
+            h2 {               
+                font-size: 22px;
+                span {
+                    display: block;
+                    line-height: 16px;
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+        }
+        
+    }
+}

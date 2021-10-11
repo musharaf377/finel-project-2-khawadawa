@@ -1,0 +1,97 @@
+/* Common style css */
+
+@import 'variable';
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1170px;
+    margin:0 auto;
+}
+
+a{
+    text-decoration: none;
+    color:$black;
+}
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+ul{
+    margin-bottom: 0;
+    list-style: none;
+}
+
+/* Flex CSS */
+$flex: flex, inline-flex;
+@each $var in $flex {
+    .d-#{$var}{
+        display: $var;
+    }    
+}
+
+/* jsutify content css*/
+$justify: start, center, end, space-around, space-between, space-evenly;
+@each $i in $justify {
+    .justify-#{$i}{
+        justify-content: $i;
+    }
+}
+
+/* align-item css */
+$align: start, center, end, space-around, space-between, space-evenly;
+@each $var in $align {
+    .align-#{$var}{
+        align-items: $var;
+    }
+}
+
+/* Background Image CSS */
+.bg{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 2;   
+    &::before{
+        background-color: $black;
+        content:"";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: .85;
+        z-index: -1;
+        top: 0;
+        left: 0;
+    }
+}
+
+/* Banner Button CSS */
+.btn{
+    display: inline-block;
+    border-radius: 3px;
+    width: 175px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    font-size: 19px;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: .3s;
+    
+    &.btn-box{
+        background-color: $primary;
+        color:$white;
+        margin: 0px 10px;
+        &:hover{
+            background-color: $black;
+        }
+    }
+}
+
+
+
+

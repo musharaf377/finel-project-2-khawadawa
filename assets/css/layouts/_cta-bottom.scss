@@ -1,0 +1,42 @@
+/* CTA Bottom area style */
+.cta-bottom-area {
+    background: $primary;
+    color: $white;
+
+    .cta-bottom-content {
+        text-align: right;
+        h1 {
+            font-size: 50px;
+            text-transform: uppercase;
+            font-weight: 800;
+            margin-right: 5px;
+            @include max-xs{
+                text-align: center;
+            }
+            @include min-sm{
+                font-size: 30px;
+            }
+            @include min-md{
+                font-size: 45px;
+            }
+        }
+    }
+    .cta-bottom-info{
+        @include max-xs{
+            margin-top:10px;
+            text-align: center;
+        }
+        h5 {
+            line-height: 30px;
+            font-size: 18px;
+            @include min-sm{
+                font-size: 15px;
+            }
+            span {
+                margin-right: 10px;
+                font-size: 18px;
+            }
+        }
+    }
+
+}

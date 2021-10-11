@@ -1,0 +1,81 @@
+/* About Area CSS */
+
+.about-area {
+    .about-content {
+        p {
+            margin-bottom: 30px;
+        }
+
+        a.btn-box {
+            margin: 0px;
+        }
+    }
+
+    .about-gallery {
+        position: relative;
+      
+        @include max-xs{
+            margin:30px 0px;
+        }
+        @include min-sm{
+            margin:30px 0px;
+        }
+        @include min-md{
+            margin:30px 0px;
+        }
+        
+        img {
+            border: 1px solid $gray;
+            @include max-xs{
+                width:100%;
+            }
+
+            &:nth-child(1) {
+                max-width: 420px;
+            }
+
+            &:nth-child(2) {
+                position: absolute;
+                right: 11%;
+                max-width: 370px;
+                bottom: -75%;
+                @include max-xs{
+                    right:0%;
+                    bottom:-30%;
+                    width: 90%;
+                }
+               
+                @include min-sm{
+                    bottom:-25%;
+                    right:-20%;
+                }
+                @include min-md{
+                    bottom:-30%;
+                }
+                @include min-lg{
+                    right: 9%;
+                    bottom:-40%;
+                }
+                @include min-xl{
+                    bottom: -40%;
+                }
+                
+            }
+        }
+    }
+
+    .about-img {
+        margin-bottom: 55px;
+        border: 1px solid #ddd;
+        padding: 3px;
+    }
+
+    .about-content {
+
+        p {
+            margin-bottom: 25px;
+            font-size: 17px;
+        }
+    }
+}
+

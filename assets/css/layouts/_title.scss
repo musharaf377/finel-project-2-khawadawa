@@ -1,0 +1,28 @@
+/* title area */
+.title{
+    h3 {
+        text-transform: capitalize;
+        font-size: 25px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 60px;
+            height: 2px;
+            background: tomato;
+            bottom: 0px;
+        }
+        &::after {
+            width: 40px;
+            position: absolute;
+            content: "";
+            height: 2px;
+            background: tomato;
+            left: 0px;
+            bottom: -5px;
+        }
+    }
+}

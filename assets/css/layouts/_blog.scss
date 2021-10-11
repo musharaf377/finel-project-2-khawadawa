@@ -1,0 +1,51 @@
+/* blog area style */
+section.blog-area {
+    background: $bg_gray;
+    .single-blog {
+        background: $white;
+        margin-bottom: 30px;
+        img{
+            width:100%;
+        }
+        .blog-meta {
+            display: flex;
+            justify-content: space-around;
+            border-bottom: 1px dashed $black;
+            padding: 10px 0px;
+            a {
+                text-transform: capitalize;
+                font-size: 18px;
+                font-weight: 600;
+                font-style: italic;
+                transition: .3s;
+                &:hover{
+                    color:$primary
+                }
+            }
+        }
+
+        .blog-content {
+            padding: 15px 24px;
+            &:hover{
+                a{
+                    color:$primary;
+                }
+            }
+            h4 {
+                text-transform: capitalize;
+                font-size: 24px;
+                font-weight: 600;
+            }
+            p {
+                margin: 10px 0px;
+            }
+            a {
+                font-size: 19px;
+                text-transform: capitalize;
+                font-weight: 500;
+                transition: .3s;
+                
+            }
+        } 
+    }
+}
